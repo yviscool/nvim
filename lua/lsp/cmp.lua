@@ -56,6 +56,9 @@ cmp.setup.cmdline(":", {
   sources = cmp.config.sources({
     { name = "path" },
   }, {
-    { name = "cmdline" },
+    --{ name = "cmdline" },
+    -- Do not show completion for words starting with 'Man'
+    -- 如果不用匹配的话 会特别的卡
+    {name = 'cmdline', keyword_pattern = [[^\@<!Man\s]]},
   }),
 })
