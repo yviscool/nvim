@@ -119,9 +119,25 @@ packer.startup({
     -- nord
     use("shaunsingh/nord.nvim")
     -- onedark
-    use("ful1e5/onedark.nvim")
+    use("navarasu/onedark.nvim")
     -- nightfox
     use("EdenEast/nightfox.nvim")
+
+    -- markdown 预览
+    use("iamcco/markdown-preview.nvim")
+    use("iamcco/mathjax-support-for-mkdp")
+
+    -- 新的笔记和任务工作流
+    use ({
+      'phaazon/mind.nvim',
+      branch = 'v2.2',
+      requires = { 'nvim-lua/plenary.nvim' },
+      config = function()
+        require'mind'.setup()
+      end
+    })
+
+    require'mind'.setup()
 
     -------------------------------------------------------
     use({ "akinsho/toggleterm.nvim" })
