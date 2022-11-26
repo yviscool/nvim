@@ -60,6 +60,11 @@ packer.startup({
     -- telescope extensions
     use("LinArcX/telescope-env.nvim")
     use("nvim-telescope/telescope-ui-select.nvim")
+    use("nvim-telescope/telescope-fzf-native.nvim")
+    -- 媒体预览
+    use("nvim-lua/popup.nvim")
+    use("nvim-telescope/telescope-media-files.nvim")
+
     -- dashboard-nvim
     use("glepnir/dashboard-nvim")
     -- project
