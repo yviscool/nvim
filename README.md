@@ -1,6 +1,8 @@
 # nvim
 my nvim
 
-im-select.exe
 
-ripgrep.exe
+in window 
+
+im-select.exe
+ripgrep.exe  If this tool is not added, when searching it  will be very slow and  high cpu
